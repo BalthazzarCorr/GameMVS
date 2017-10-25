@@ -1,19 +1,19 @@
 ﻿namespace SimpleMvc.Framework.Routers
 {
-    using Framework.Attributes.Methods;
-    using Framework.Helpers;
-    using SimpleMvc.Framework.Contracts;
-    using SimpleMvc.Framework.Controllers;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Reflection;
-    using WebServer.Contracts;
-    using WebServer.Exceptions;
-    using WebServer.Http.Contracts;
-    using WebServer.Http.Response;
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   using System.Reflection;
+   using Attributes.Methods;
+   using Helpers;
+   using Contracts;
+   using Controllers;
+   using WebServer.Contracts;
+   using WebServer.Exceptions;
+   using WebServer.Http.Contracts;
+   using WebServer.Http.Response;
 
-    public class ControllerRouter : IHandleable
+   public class ControllerRouter : IHandleable
     {
         private IDictionary<string, string> getParameters;
         private IDictionary<string, string> postParameters;
